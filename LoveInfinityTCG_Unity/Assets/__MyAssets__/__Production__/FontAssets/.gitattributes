@@ -1,0 +1,4 @@
+## git-lfs ##
+#Only __Production__/Core/FontAssets Folder
+*.asset !merge !eol
+*.asset filter=lfs diff=lfs merge=lfs -text
