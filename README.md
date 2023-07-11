@@ -2,9 +2,9 @@
 ## Overview
 「AI恋愛シミュレーション × 愛が深まるほど強くなるTCG」
 [OASYS HACKJAM](https://oasys.framer.website/)参加プロダクト。  
-Productの詳細は、〓に掲載。
+Productの詳細は[AkindoのProductページ](https://app.akindo.io/communities/63L8z1EwZU1Wa2vn/products/RDqVGBAQli6Wogd7p)に掲載。
 
-![Thumbnail_16_9](https://github.com/wappaboy/DatingSimAI/assets/26949640/850ab9d0-f728-4753-833d-61caf75c8ddb)
+![249507357-850ab9d0-f728-4753-833d-61caf75c8ddb](https://github.com/wappaboy/LoveInfinityTCG/assets/26949640/fc8c8585-8145-43b9-85f5-c8fb802334ea)
 
 ## Game Story
 「今は放課後。帰りの坂道で主人公はヒロインに話しかけられます」。ゲームが決めているストーリーはたったのこれだけ！
@@ -21,17 +21,27 @@ Productの詳細は、〓に掲載。
 
 まさに、愛の可能性は無限大!!
 
-## New Feature!! カレンダーアルバム機能
+## カレンダーアルバム機能
 2023-06-28にカレンダーアルバム機能を追加しました！  
 デートの約束をしてデートの記念写真NFTを生成した後、カレンダーアルバムに記録されます。
 
-![calenderAlbum](https://github.com/wappaboy/DatingSimAI/assets/26949640/5ad682a2-d9d7-4664-b6fb-e1a1898a3f2d)
+![249510892-5ad682a2-d9d7-4664-b6fb-e1a1898a3f2d](https://github.com/wappaboy/LoveInfinityTCG/assets/26949640/0ee91041-0486-4214-9f7b-a672d08bbb6b)
 
 これで**いつでもヒロインとの思い出を見返せます**！  
 いつにどんなデートをするのかを認識する日付判定はChatGPTが行っています！
 
+## 【未実装 企画中】TCG
+![4](https://github.com/wappaboy/LoveInfinityTCG/assets/26949640/4040b669-bd9d-4387-ad3a-908e047b42ad)
+
+以下の3指標に基づいて、過去のデート記念写真からTCG NFTカードを生成できます。
+・彼女になれたかどうか
+・ヒロインとの親密度
+・デートの行き先や会話内容
+
+レアなTCG NFTカードを手に入れることができたら、追加エピソードを閲覧体験できます。カードには、パワーや特殊効果などのパラメーターが記載されており、相手とバトルすることもできます。
+
 ## How we built it
-![how_we_build](https://github.com/wappaboy/DatingSimAI/assets/21142454/d261558b-2ed4-4f5e-9233-e9f4605bcff0)
+![249643342-d261558b-2ed4-4f5e-9233-e9f4605bcff0](https://github.com/wappaboy/LoveInfinityTCG/assets/26949640/2d3854e8-90e8-416d-95a5-20e77303b22d)
 
 ### ヒロインとの会話パート
 1. ユーザーからの入力に応じて、Chat GPTでヒロインの返答を生成
@@ -96,15 +106,10 @@ node.jsを用いてサーバーを立ち上げる
 ```
 node app.js
 ```
-deployするためのコマンドを叩く(ASTARネットワークへdeployする場合)
+deployするためのコマンドを叩く
 ```
 npx hardhat run --network astar scripts/deploy.js
 ```
-### Deploy済みNFTコントラクト
-| Network  | Contract Address |
-| ------------- | ------------- |
-| ASTAR  | [0x753455Fc4131e619E6bf80c7977124085a33cd6B](https://blockscout.com/astar/address/0x753455Fc4131e619E6bf80c7977124085a33cd6B)   |
-| Mumbai Testnet  | [0x0CB2fF14EF8c7fe3410DB79B97FC02E78Ea14e90](https://mumbai.polygonscan.com/address/0x0CB2fF14EF8c7fe3410DB79B97FC02E78Ea14e90) |
 
 ## ローカル環境での遊び方
 1. `git clone https://github.com/wappaboy/DatingSimAI.git`でレポジトリをローカルに落とす
