@@ -22,17 +22,17 @@
 ### 【未実装 企画中】TCG
 ![4](https://github.com/wappaboy/LoveInfinityTCG/assets/26949640/4040b669-bd9d-4387-ad3a-908e047b42ad)
 
-以下の3指標に基づいて、過去のデート記念写真からTCG NFTカードを生成できます。<br>
-・彼女になれたかどうか<br>
-・ヒロインとの親密度<br>
-・デートの行き先や会話内容<br>
+以下の3指標に基づいて、過去のデート記念写真からTCG NFTカードを生成できます。
+- 彼女になれたかどうか
+- ヒロインとの親密度
+- デートの行き先や会話内容
 
 レアなTCG NFTカードを手に入れることができたら、追加エピソードを閲覧体験できます。カードには、パワーや特殊効果などのパラメーターが記載されており、相手とバトルすることもできます。
 
 ## デモ動画
 [https://youtu.be/0J3sKdUMGcQ](https://youtu.be/0J3sKdUMGcQ)
 
-## どのように作ったか・なんの技術を使ったか
+## どのように作ったか
 ![249643342-d261558b-2ed4-4f5e-9233-e9f4605bcff0](https://github.com/wappaboy/LoveInfinityTCG/assets/26949640/2d3854e8-90e8-416d-95a5-20e77303b22d)
 
 ### ヒロインとの会話パート
@@ -45,6 +45,12 @@
 3. そのpromptを基にStable Diffusion APIを叩いて記念写真を生成する
 4. 記念写真をToken URIとしたNFTをMintするよう、UnityアプリからMint用サーバーにリクエスト
 5. Mint用サーバーがNFTをMintする
+
+## なんの技術を使ったか
+- Unity : ゲームエンジンとして利用
+- GPT-4 : ヒロインの会話文の生成。カップル成立かどうかの判断等
+- Stable Diffusion(Model : AnythingElse V4) : 記念写真の生成に用いた
+- TCG Verse : NFT Contractなどのdeploy先
 
 ## 技術的に難しかったこと
 - ヒロインの返答がある程度違和感のないものになるようにGPT向けのプロンプトをチューニングすること
